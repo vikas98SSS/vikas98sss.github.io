@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Vikas Dhakad</title>
+  <meta name="description" content="Data analytics projects by Vikas Dhakad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">Vikas Dhakad</a>
+    <nav><button id="themeBtn" aria-label="Switch theme">Dark</button></nav>
+  </header>
+  <main>
+    <section class="profile">
+      <div class="profile-card">
+        <div class="photo-wrap">
+          <div class="photo-frame">
+            <img class="photo" src="My photo.png">
+            <span class="initials">VD</span>
+          </div>
+        </div>
+        <div class="profile-info">
+          <span class="open-pill">Open to work</span>
+          <h1>Vikas Dhakad</h1>
+          <p class="role">Data Analyst</p>
+          <p class="meta-row">Gwalior, India <span>|</span> 3+ years of experience</p>
+          <div class="exp-row">
+            <span class="exp-label">Experience includes:</span>
+            <span class="exp-chip">Tropilite Foods</span>
+            <span class="exp-chip">Numeric Infosystem</span>
+          </div>
+          <div class="cta">
+            <a class="btn" href="mailto:vikashdhakad449@gmail.com">Message me</a>
+            <a class="btn ghost" href="resume.pdf" download>Download resume</a>
+          </div>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="Portfolio sections"><a class="tab" href="index.html">Profile</a><a class="tab" aria-current="page" href="projects.html">Projects</a><a class="tab" href="experience.html">Experience</a><a class="tab" href="about.html">About</a><a class="tab" href="contact.html">Contact</a></nav>
+    </section>
+    <section>
+      <h2>Projects</h2>
+      <p class="sub">Personal projects in Power BI, SQL, Python and Google Sheets. Hover over a button to see a preview.</p>
+      <div class="grid" id="projectGrid"></div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Vikas Dhakad</footer>
+  <script src="script.js"></script>
+</body>
+</html>

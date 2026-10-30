@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Vikas Dhakad</title>
+  <meta name="description" content="Vikas Dhakad, data analyst. Power BI, SQL and Python.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <aside class="side">
+    <div class="photo-frame"><img class="photo" src="My photo.png"><span class="initials">VD</span></div>
+    <a class="open-work" href="contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>Open to Work</a>
+    <h2 class="s-name">Vikas Dhakad</h2>
+    <p class="s-role">Data Analyst</p>
+    <p class="s-loc"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Gwalior, India</p>
+    <p class="s-exp">3+ years Experience Includes:</p>
+    <div class="s-chips"><span title="Tropilite Foods">TF</span><span title="Numeric Infosystem">NI</span></div>
+    <div class="s-actions">
+      <a class="s-msg" href="mailto:vikashdhakad449@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>Message</a>
+      <a class="s-dl" href="resume.pdf" download aria-label="Download resume"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg></a>
+    </div>
+    <nav class="s-tabs" aria-label="Sections"><a class="stab" href="about.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span>Profile</span></a><a class="stab" aria-current="page" href="index.html"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg><span>Portfolio</span></a><a class="stab" href="work.html"><svg viewBox="0 0 24 24"><path d="M12 6c-2-1.5-5-2-8-2v14c3 0 6 .5 8 2 2-1.5 5-2 8-2V4c-3 0-6 .5-8 2zM12 6v14"/></svg><span>Projects</span></a></nav>
+  </aside>
+  <div class="stage">
+    <header class="pill">
+      <a class="brand" href="index.html">Vikas Dhakad <small>- DATA ANALYST</small></a>
+      <nav><a aria-current="page" href="index.html">Home</a><a href="work.html">Work</a><a href="demo.html">Demo</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <div class="pill-right">
+        <a class="resume" href="resume.pdf" download><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg>Resume</a>
+        <button id="themeBtn" aria-label="Switch theme">&#9790;</button>
+      </div>
+    </header>
+    <section class="hero">
+      <h1>Turning data into <br class="br">clear <em>Insights &amp; Dashboards</em></h1>
+      <p class="hero-sub">Data Analyst with 3+ years of experience in Power BI, SQL, Python and SAP Business One.</p>
+      <div class="avatar"><div class="photo-frame"><img class="photo" src="analytics-hero.svg"><span class="initials">VD</span></div></div>
+    </section>
+    <div class="wrap">
+      <section class="stats">
+        <div><strong>3+</strong><span>years of experience as a data analyst</span></div>
+        <div><strong>80%</strong><span>less manual reporting work through automation</span></div>
+        <div><strong>10-15 hrs</strong><span>of manual work saved every week</span></div>
+      </section>
+      <section class="reveal">
+        <h2>What I can <em>do for you</em></h2>
+        <div class="grid3">
+          <div class="mini"><h3>Dashboards</h3><p>Power BI and Excel dashboards with KPI tracking, variance and trend analysis.</p></div>
+          <div class="mini"><h3>Report automation</h3><p>Daily, weekly and monthly reports built with Power Query, DAX, SQL and Python, so nobody repeats the same work.</p></div>
+          <div class="mini"><h3>SQL analysis</h3><p>Answering business questions from data with joins, subqueries and clear summaries.</p></div>
+          <div class="mini"><h3>MIS reporting</h3><p>Sales, inventory, procurement, production and finance reports for management.</p></div>
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="sec-head"><h2>Selected <em>work</em></h2><a class="more" href="work.html">View all projects</a></div>
+        <div class="grid" id="featuredGrid"></div>
+      </section>
+      <section class="reveal">
+        <h2>How I <em>work</em></h2>
+        <div class="steps">
+          <div class="step"><span>01</span><h3>Understand</h3><p>I start with the business question and who will use the answer.</p></div>
+          <div class="step"><span>02</span><h3>Clean the data</h3><p>I collect and clean the data with SQL, Python or Power Query.</p></div>
+          <div class="step"><span>03</span><h3>Build</h3><p>I build the dashboard or report with clear KPIs and filters.</p></div>
+          <div class="step"><span>04</span><h3>Share and automate</h3><p>I explain the insights, then automate the report so it updates on its own.</p></div>
+        </div>
+      </section>
+      <section class="cta-box">
+        <h2>Let&rsquo;s <em>work together</em></h2>
+        <p>I am open to data analyst roles, including remote work.</p>
+        <a class="btn" href="contact.html">Get in touch</a>
+      </section>
+    </div>
+    <footer>© <span id="year"></span> Vikas Dhakad</footer>
+  </div>
+  <script src="script.js?v=5"></script>
+</body>
+</html>

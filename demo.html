@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo | Vikas Dhakad</title>
+  <meta name="description" content="About Interactive sales dashboard demo by Vikas Dhakad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <aside class="side">
+    <div class="photo-frame"><img class="photo" src="My photo.png"><span class="initials">VD</span></div>
+    <a class="open-work" href="contact.html"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>Open to Work</a>
+    <h2 class="s-name">Vikas Dhakad</h2>
+    <p class="s-role">Data Analyst</p>
+    <p class="s-loc"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Gwalior, India</p>
+    <p class="s-exp">3+ years Experience Includes:</p>
+    <div class="s-chips"><span title="Tropilite Foods">TF</span><span title="Numeric Infosystem">NI</span></div>
+    <div class="s-actions">
+      <a class="s-msg" href="mailto:vikashdhakad449@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>Message</a>
+      <a class="s-dl" href="resume.pdf" download aria-label="Download resume"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg></a>
+    </div>
+    <nav class="s-tabs" aria-label="Sections"><a class="stab" href="about.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span>Profile</span></a><a class="stab" href="index.html"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg><span>Portfolio</span></a><a class="stab" href="work.html"><svg viewBox="0 0 24 24"><path d="M12 6c-2-1.5-5-2-8-2v14c3 0 6 .5 8 2 2-1.5 5-2 8-2V4c-3 0-6 .5-8 2zM12 6v14"/></svg><span>Projects</span></a></nav>
+  </aside>
+  <div class="stage">
+    <header class="pill">
+      <a class="brand" href="index.html">Vikas Dhakad <small>- DATA ANALYST</small></a>
+      <nav><a href="index.html">Home</a><a href="work.html">Work</a><a aria-current="page" href="demo.html">Demo</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+      <div class="pill-right">
+        <a class="resume" href="resume.pdf" download><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg>Resume</a>
+        <button id="themeBtn" aria-label="Switch theme">&#9790;</button>
+      </div>
+    </header>
+    <div class="wrap">
+      <section class="page-title"><h1>Interactive <em>demo</em></h1>
+        <p>A small sales dashboard I built for this site. Change the filters and every number and chart updates. It uses sample data, not real company data.</p>
+      </section>
+      <section id="demo">
+        <div class="filters">
+          <label>Region <select id="fRegion"></select></label>
+          <label>Category <select id="fCat"></select></label>
+          <button type="button" id="fReset" class="reset">Reset</button>
+        </div>
+        <div class="kpis" id="kpis"></div>
+        <div class="demo-grid">
+          <div class="panel"><h3>Monthly sales</h3><div class="chart" id="chart"></div></div>
+          <div class="panel"><h3>Sales by category</h3><div id="breakdown"></div></div>
+        </div>
+        <p class="note">Sample data for demonstration only.</p>
+      </section>
+    </div>
+    <footer>© <span id="year"></span> Vikas Dhakad</footer>
+  </div>
+  <script src="script.js?v=5"></script>
+</body>
+</html>
