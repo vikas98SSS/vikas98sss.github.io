@@ -66,15 +66,17 @@ setTheme(saved || "dark");
 btn.addEventListener("click", () => setTheme(root.dataset.theme === "dark" ? "light" : "dark"));
 
 // Photo: looks for my-photo.jpg / .jpeg / .png / .webp in this folder
+// Only the sidebar photo is replaced. The hero image (analytics-hero.svg) stays as it is.
 (function(){
   const exts = ["jpg", "jpeg", "png", "webp"];
   (function tryNext(i){
     if (i >= exts.length) return;
     const t = new Image();
-    t.onload = () => document.querySelectorAll(".photo-frame").forEach(f => {
+    t.onload = () => document.querySelectorAll(".side .photo-frame").forEach(f => {
       const img = f.querySelector(".photo");
-      img.src = t.src; img.hidden = false;
-      f.querySelector(".initials").hidden = true;
+      if (img) { img.src = t.src; img.hidden = false; }
+      const ini = f.querySelector(".initials");
+      if (ini) ini.hidden = true;
     });
     t.onerror = () => tryNext(i + 1);
     t.src = "my-photo." + exts[i];
